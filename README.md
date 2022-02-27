@@ -3,6 +3,7 @@
 `$ python3 -i XXX.py`    
 > -i:    
 > inspect interactively after running script; forces a prompt even if stdin does not appear to be a terminal;
+> ![](https://github.com/CS0000/CS61A-HW-notes-projects/blob/main/Notes_materials/Notes_img/python_interactive_mode.png)
           
 #### test domo               
 `$ python3 -m doctest -v XXX.py`
@@ -11,5 +12,7 @@
 
 #### local variable 'x' referenced before assignment      
 you can't have the same local and a global name at the same time, in a function
+![](https://github.com/CS0000/CS61A-HW-notes-projects/blob/main/Notes_materials/Notes_img/local_var.png)
+
 
 
