@@ -22,7 +22,7 @@ you can't have the same local and a global name at the same time, in a function
 
 <br>     
 
-### lambda
+#### lambda
 lambda: a function with formal parameter x (or anything else)
 ```python
 >>> squr = lambda x: x*x
@@ -38,7 +38,7 @@ lambda: a function with formal parameter x (or anything else)
 
 <br>
 
-### `/` and `//`
+#### `/` and `//`
 ```python
 pi = 31415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679
 
@@ -52,7 +52,7 @@ pi = 314159265358979323846264338327950288419716939937510582097494459230781640628
 
 <br>
 
-## Question 6 Suite 2 Case 4
+#### Question 6 Suite 2 Case 4
 ```python
 > python3 -i hog.py
 >>> def total(s0,s1):
@@ -100,7 +100,7 @@ whether scores are smaller than goal: False
 
 <br>
 
-## `*arg`
+#### `*arg`
 ```python
 def a(*args):
     print(type(args))
@@ -120,3 +120,6 @@ def a(*args):
 3
 """
 ```
+
+<br>
+
