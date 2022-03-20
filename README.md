@@ -123,3 +123,28 @@ def a(*args):
 
 <br>
 
+#### count partitions
+[this vedio](https://www.youtube.com/watch?v=DvgT4dnSMVM&list=PL6BsET-8jgYU1eWkdF45L1Pce1d4DxJcR&index=7)
+```python
+# count partitions
+# count_partitions(5,3)
+# 3+2
+# 3+1+1
+# 2+2+1
+# 2+1+1+1
+# 1+1+1+1+1
+def count_partitions(n,m):
+    # return how many ways to make the equation, e.g. there are 5 for f(5,3)
+    if n==0:
+        return 1
+    elif n<0:
+        return 0
+    elif m==0:
+        return 0
+    else:
+        with_m = count_partitions(n-m,m)
+        without_m = count_partitions(n,m-1)
+        return with_m + without_m
+```
+...just draw it on a paper
+![](Notes_materials/Notes_img/count_partition.png)
