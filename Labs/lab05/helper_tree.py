@@ -58,3 +58,11 @@ def add_tree(t1,t2):
             branches_unique = b1[len(b2):]
         return tree(label=label(t1)+label(t2),
                     branches= branches_overlap+branches_unique)
+
+def print_sums(t,so_far=0):
+    so_far = so_far + label(t)
+    if is_leaf(t):
+        print(so_far)
+    else:
+        for b in branches(t):
+            print_sums(b,so_far)
